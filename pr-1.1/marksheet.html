@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks;
+
+        // user input
+        let math = parseInt(prompt("Enter your Mathmatics Marks"));
+        let sci = parseInt(prompt("Enter your Science Marks"));
+        let eng = parseInt(prompt("Enter your English Marks"));
+        let ss = parseInt(prompt("Enter your Social Science Marks"));
+        let guj = parseInt(prompt("Enter your Gujarati Marks"));
+        let hin = parseInt(prompt("Enter your Hindi Marks"));
+        let com = parseInt(prompt("Enter your Computer Marks"));
+
+        //Average Marks calculation
+        marks = (math + sci + eng + ss + guj + hin + com)/7;
+        console.log("Your Average Marks =",marks);
+
+        //Grade intilization using conditional operator
+        //ladder If, else
+        if(marks>=90){
+            console.log("Your Grade is 'A' ");
+        }
+        else if(marks>=80 && marks<90){
+            console.log("Your Grade is 'B' ");
+        }
+        else if(marks>=70 && marks<80){
+            console.log("Your Grade is 'C' ");
+        }
+        else if(marks>=40 && marks<70){
+            console.log("Your Grade is 'D' ");
+        }
+        else if(marks<40){
+            console.log("Your Grade is 'F' ");
+        }
+    </script>
+</body>
+</html>
