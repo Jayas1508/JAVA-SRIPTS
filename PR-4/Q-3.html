@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //  Write a JavaScript program to find which number is greater in 4 numbers using nested if else. (using simple function)
+
+        
+        function greaterNum(n1, n2, n3, n4) {
+            if (n1 >= n2 && n1 >= n3 && n1 >= n4) {
+                return num1;
+            } else if (n2 >= n1 && n2 >= n3 && n2 >= n4) {
+                return n2;
+            } else if (n3 >= n1 && n3 >= n2 && n3 >= n4) {
+                return n3;
+            } else {
+                return n4;
+            }
+        }
+        console.log(greaterNum(100, 220, 45, 1));
+
+    </script>
+</body>
+
+</html>
