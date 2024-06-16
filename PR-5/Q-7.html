@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic calculation of array</title>
+</head>
+
+<body>
+    <!-- 7.Write a javascript program to all array element sum(using array map method). -->
+
+    <script>
+        let numbers = [10, 20, 30, 40, 50];
+        let mappedArr = numbers.map((num) => num);
+
+        let sum = mappedArr.reduce((a, b) => a + b, 0);
+
+        console.log("Sum of array elements", sum);
+
+    </script>
+</body>
+
+</html>
